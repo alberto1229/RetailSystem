@@ -35,21 +35,32 @@
 
        
           <ul class="navbar-nav me-auto mb-1 mb-lg-0">
-            <div class="input-group rounded">
-                <input type="search" class="form-control rounded" placeholder="Buscar..." aria-label="Search" aria-describedby="search-addon" />
-                <span class="input-group-text border-0" id="search-addon">
-                  <i class="lni lni-search"></i>
+            <div class="input-group rounded position-relative">
+                <input type="search" class="form-control rounded" placeholder="Buscar..." aria-label="Search" aria-describedby="search-addon" style="padding-right: 2.5rem;" />
+                <span class="position-absolute top-50 end-0 translate-middle-y me-2" id="search-addon" style="font-size: 1rem;">
+                    <i class="lni lni-search-alt"></i>
                 </span>
-              </div>
+            </div>                       
         </ul>
         <!-- Icons -->
         <ul class="navbar-nav d-flex flex-row me-2">
-          <li class="nav-item me-3 me-lg-0">
-            <a class="nav-link" href="#"><i class="lni lni-popup"></i></a>
-          </li>
-          <li class="nav-item me-3 me-lg-0">
-            <a class="nav-link" href="#"><i class="lni lni-user"></i></a>
-          </li>
+            <!-- Notification Icon -->
+            <li class="nav-item me-3 me-lg-0">
+                <a class="nav-link" href="#"><i class="lni lni-alarm" style="font-size: 1.3rem;"></i></a>
+            </li>
+            
+            <!-- Profile Dropdown -->
+            <li class="nav-item dropdown me-3 me-lg-0">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    <i class="lni lni-user" style="font-size: 1.3rem;"></i>
+                </a>
+                <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdown">
+                    <li><a class="dropdown-item" href="#">Mi Perfil</a></li>
+                    <li><a class="dropdown-item" href="#">Configuración</a></li>
+                    <li><hr class="dropdown-divider"></li>
+                    <li><a class="dropdown-item" href="#">Cerrar Sesión</a></li>
+                </ul>
+            </li>
         </ul>
   
         <!-- Search -->
@@ -185,12 +196,6 @@
                     </a>
                 </li>
             </ul>
-            <div class="sidebar-footer">
-                <a href="#" class="sidebar-link">
-                    <i class="lni lni-exit"></i>
-                    <span>Cerrar Sesión</span>
-                </a>
-            </div>
         </aside>
         <div class="main p-3">
             <div class="text-center">
