@@ -1,0 +1,10 @@
+<h1>Detalle de la Orden de Compra</h1>
+<p>Proveedor: {{ orden.proveedor.nombre }}</p>
+<p>Fecha: {{ orden.fecha }}</p>
+<p>Total: {{ orden.total }}</p>
+<h2>Detalles de la Orden</h2>
+<ul>
+    {% for detalle in orden.detalles.all %}
+        <li>Producto: {{ detalle.producto.nombre }} - Cantidad: {{ detalle.cantidad }} - Subtotal: {{ detalle.subtotal }}</li>
+    {% endfor %}
+</ul>

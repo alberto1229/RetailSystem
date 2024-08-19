@@ -1,0 +1,8 @@
+<h1>Lista de Facturas</h1>
+<ul>
+    {% for factura in facturas %}
+        <li>
+            <a href="{% url 'detalle_factura' factura.pk %}">Factura {{ factura.id }} - Cliente: {{ factura.cliente.nombre }}</a> - Total: {{ factura.total }} - Fecha: {{ factura.fecha }}
+        </li>
+    {% endfor %}
+</ul>

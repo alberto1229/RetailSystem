@@ -1,0 +1,10 @@
+<h1>Detalle de la Factura</h1>
+<p>Cliente: {{ factura.cliente.nombre }}</p>
+<p>Fecha: {{ factura.fecha }}</p>
+<p>Total: {{ factura.total }}</p>
+<h2>Detalles de la Factura</h2>
+<ul>
+    {% for detalle in factura.detalles.all %}
+        <li>Producto: {{ detalle.producto.nombre }} - Cantidad: {{ detalle.cantidad }} - Subtotal: {{ detalle.subtotal }}</li>
+    {% endfor %}
+</ul>
