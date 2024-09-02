@@ -1,0 +1,76 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: linear-gradient(135deg, #3581e6, #cd78e7);
+    margin: 0; 
+}
+
+.form-container {
+    background: #ffffff;
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(83, 24, 24, 0.1);
+    max-width: 400px;
+    width: 100%;
+    margin: 0 auto; 
+}
+
+.form-title {
+    margin-bottom: 1.5rem;
+    text-align: center;
+    font-size: 1.5rem; 
+}
+
+.toggle-buttons {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 1.5rem;
+}
+
+.toggle-buttons button {
+    width: 100%;
+    padding: 0.5rem 1rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    background: transparent;
+    transition: background 0.3s;
+}
+
+.form-group {
+    margin-bottom: 1rem;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 0.5rem;
+    font-weight: bold;
+}
+
+.form-control,
+.form-select {
+    width: 100%;
+    padding: 0.75rem;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    box-sizing: border-box; 
+}
+
+.form-group a {
+    display: block;
+    text-align: right;
+    color: #171f27;
+    text-decoration: none;
+    margin-top: 0.5rem;
+}
+
+.form-group a:hover {
+    text-decoration: underline;
+}
+
+.toggle-text {
+    text-align: center;
+    margin-top: 1rem;
+}
