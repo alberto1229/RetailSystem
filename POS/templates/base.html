@@ -71,7 +71,7 @@
                     <a href="/">POS 24</a>
                 </div>
             </div>
-            <ul class="sidebar-nav">
+                <!-- Otras opciones del sidebar -->
                 <li class="sidebar-item">
                     <a href="#" class="sidebar-link">
                         <i class="lni lni-user"></i>
@@ -86,7 +86,10 @@
                     </a>
                     <ul id="auth" class="sidebar-dropdown list-unstyled collapse" data-bs-parent="#sidebar">
                         <li class="sidebar-item">
-                            <a href="#" class="sidebar-link">Login</a>
+                            <a href="{% url 'login' %}" class="sidebar-link">
+                                <i class="lni lni-lock"></i>
+                                <span>Iniciar Sesión</span>
+                            </a>
                         </li>
                         <li class="sidebar-item">
                             <a href="#" class="sidebar-link">Register</a>
