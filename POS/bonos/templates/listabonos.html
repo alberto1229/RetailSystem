@@ -1,0 +1,14 @@
+{% extends "base.html" %}
+{% block content %}
+    <h1>Lista de Bonos</h1>
+    <a href="{% url 'crear_bono' %}">Crear nuevo bono</a>
+    <ul>
+        {% for bono in bonos %}
+            <li>
+                <a href="{% url 'detalle_bono' bono.id %}">{{ bono.nombre }}</a>
+                <a href="{% url 'editar_bono' bono.id %}">Editar</a>
+                <a href="{% url 'eliminar_bono' bono.id %}">Eliminar</a>
+            </li>
+        {% endfor %}
+    </ul>
+{% endblock %}
